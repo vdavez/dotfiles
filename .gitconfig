@@ -1,5 +1,7 @@
 [user]
 	name = V. David Zvenyach
 	email = dave@zvenyach.com
+        signingkey = 2B91F78B1DE1CEE7
+
 [init]
 	defaultBranch = main
