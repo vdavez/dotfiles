@@ -28,3 +28,4 @@ set undolevels=1000
 set backspace=indent,eol,start
 
 noremap <leader>c <Esc>:!git add -u && git commit --verbose <CR><CR>
+
