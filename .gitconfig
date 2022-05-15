@@ -3,5 +3,11 @@
 	email = dave@zvenyach.com
         signingkey = 2B91F78B1DE1CEE7
 
+[alias]
+        co = checkout
+
+[commit]
+        gpgsign = true
+
 [init]
 	defaultBranch = main
