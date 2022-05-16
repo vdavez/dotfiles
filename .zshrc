@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias g="git"
 alias gpom="git push origin main"
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
 # Created by `pipx` on 2022-05-08 01:23:51
 export PATH="$PATH:/Users/vzvenyach/.local/bin"
@@ -109,3 +110,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export GPG_TTY=$(tty)
+
+# Install pyenv stuff
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
