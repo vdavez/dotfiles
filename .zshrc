@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git golang)
+plugins=(dotenv poetry git golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 alias g="git"
 alias gpom="git push origin main"
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+alias psh='source "$( poetry env info --path )/bin/activate"'
 
 # Created by `pipx` on 2022-05-08 01:23:51
 export PATH="$PATH:/Users/vzvenyach/.local/bin"
@@ -119,3 +120,6 @@ eval "$(pyenv init -)"
 # For golang
 export GOPATH=$HOME/go
 
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/vzvenyach/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
